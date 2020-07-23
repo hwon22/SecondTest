@@ -53,6 +53,27 @@ namespace SecondTest
                */
             }
 
+            Console.WriteLine();
+
+            //list 요소 삭제
+            List<int> list3 = new List<int>();
+            list3.Add(22);
+            list3.Add(33);
+            list3.Add(44);
+            list3.Add(55);
+
+            list3.Remove(33);
+
+            foreach(var item in list3)
+            {
+                Console.WriteLine("Count: " + list3.Count + "\titem: " + item);
+                /* 
+                Count: 3     item: 22
+                Count: 3     item: 44
+                Count: 3     item: 55
+               */
+            }
+
         }
 
     }
